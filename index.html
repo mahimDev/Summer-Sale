@@ -49,18 +49,18 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- card container -->
 
-        <section>
+        <section class="px-10">
           <div class="gap-10">
             <h1 class="text-4xl font-semibold py-5">Kitchenware</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
               <!-- first kitchenware card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class=" p-5"
                     src="./images/prod1.png"
                     alt="Shoes"
                   />
@@ -94,18 +94,18 @@
                       class="mask mask-star-2 bg-orange-400"
                     />
                   </div>
-                  <h2 class="card-title">K. 1 Accessories</h2>
-                  <p class="text-[#11111180]">39.00 TK</p>
+                  <h2 class="card-title">Spoones</h2>
+                  <p class="text-[#11111180]">50.00 TK</p>
                 </div>
               </div>
               <!-- second kitchenware card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class=" p-5"
                     src="./images/prod2.png"
                     alt="Shoes"
                   />
@@ -139,18 +139,18 @@
                       class="mask mask-star-2 bg-orange-400"
                     />
                   </div>
-                  <h2 class="card-title">K. 2 Accessories</h2>
-                  <p class="text-[#11111180]">25.00 TK</p>
+                  <h2 class="card-title">Dishes</h2>
+                  <p class="text-[#11111180]">100.00 TK</p>
                 </div>
               </div>
               <!-- therd kitchenware card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class=" p-5"
                     src="./images/prod3.png"
                     alt="Shoes"
                   />
@@ -194,11 +194,11 @@
               <!-- first Sportswear card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class=" p-5"
                     src="./images/prod4.png"
                     alt="Shoes"
                   />
@@ -232,18 +232,18 @@
                       class="mask mask-star-2 bg-orange-400"
                     />
                   </div>
-                  <h2 class="card-title">Sports Back Cap</h2>
-                  <p class="text-[#11111180]">39.00 TK</p>
+                  <h2 class="card-title"> Back Cap</h2>
+                  <p class="text-[#11111180]">100.00 TK</p>
                 </div>
               </div>
               <!-- second Sportswear card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class=" p-5"
                     src="./images/prod5.png"
                     alt="Shoes"
                   />
@@ -277,18 +277,18 @@
                       class="mask mask-star-2 bg-orange-400"
                     />
                   </div>
-                  <h2 class="card-title">Full Jersey Set</h2>
+                  <h2 class="card-title"> Jersey Set</h2>
                   <p class="text-[#11111180]">25.00 TK</p>
                 </div>
               </div>
               <!-- therd Sportswear card -->
               <div
                 onclick="clickElementValue(this)"
-                class="card card-compact bg-base-100 shadow-xl"
+                class="card card-compact bg-base-100 shadow-xl hover:bg-gradient-to-r from-orange-50 to-orange-100"
               >
                 <figure>
                   <img
-                    class="bg-[#1111110D] p-5"
+                    class="  p-5"
                     src="./images/prod6.png"
                     alt="Shoes"
                   />
@@ -336,10 +336,11 @@
 
             <div class="join">
               <input
+              id="coupon-input"
                 class="input input-bordered join-item"
                 placeholder="Coupon code"
               />
-              <button class="btn join-item bg-[#E527B2] text-white">
+              <button disabled onclick="couponApplyBtn()" id="apply-btn"  class="btn join-item bg-[#E527B2] text-white">
                 Apply
               </button>
             </div>
@@ -369,17 +370,17 @@
               Make Purchase
             </button>
             <dialog id="my_modal_1" class="modal">
-              <form method="dialog" class="modal-box">
-                <div class="  ">
-                  <img class="justify-center" src="./images/congo.png" alt="" />
-                  <h3 class="font-bold text-5xl text-center">
+              <form method="dialog" class="modal-box py-14">
+                <div class="">
+                  <img class="mx-auto" src="./images/congo.png" alt="" />
+                  <h3 class="font-bold text-4xl mt-10 text-center">
                     Congratulations
                   </h3>
                   <p class="py-4 text-center">Your Purchase the product</p>
                 </div>
-                <div class="modal-action justify-center items-center">
+                <div class="text-center">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn bg-[#E527B2] text-white mt-10">
+                  <button onclick=" goHomeBtn()"  class="btn bg-[#E527B2] text-white mt-4">
                     Go Home
                   </button>
                 </div>
@@ -390,5 +391,6 @@
       </div>
     </main>
     <script src="./index.js"></script>
+
   </body>
 </html>
