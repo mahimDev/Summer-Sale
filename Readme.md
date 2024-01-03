@@ -1,5 +1,3 @@
 # summer-sale
 
-## [ Private Repo Link](https://classroom.github.com/a/uicCJkDQ)
-
-Click here for the private repo: [https://classroom.github.com/a/uicCJkDQ](https://classroom.github.com/a/uicCJkDQ)
+## [ Live Link](https://64e370783cccbb1fffa28047--leafy-lollipop-323171.netlify.app/)
